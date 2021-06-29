@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik&display=swap');
+
+
+:root {
+    background: #19191B;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    padding: 3rem 0 0 3rem;
+    overflow: hidden;
+}
+
+#stocks tr td,th:nth-child(odd) {
+    background: #242424;
+    width: 10rem;
+}
+
+#stocks tr td:nth-child(1) {
+    color: linear-gradient(90deg, #FFCB44 0%, #F89521 100%);
+    color: #FFCB44;
+    font-family: 'Rubik', sans-serif;
+    text-align: left;
+    text-indent: 2rem;
+
+}
+
+
+
+#stocks tr td:nth-child(even) {background:#303030}
+#stocks tr th:nth-child(even) {background:#303030}
+#sum tr td:nth-child(odd) {
+    color: #888;
+    width: 16rem;
+}
+#sum tr td:nth-child(even) {
+    text-align: left;
+    overflow: hidden;
+    width: 10rem;
+}
+#stocks tr th {color: #888}
+#stocks tr:last-child td:first-child {border-bottom-left-radius: 15px}
+#stocks tr:first-child th:last-child {border-top-right-radius: 15px}
+#stocks tr:first-child th:first-child {border-top-left-radius: 15px}
+#stocks tr:last-child td:last-child {border-bottom-right-radius: 15px}
+
+#stocks {
+    width: 60rem;
+    text-align: center;
+    border-radius: 10px;
+}
+#sum{
+    width: 25rem;
+    padding-top: 3rem;
+    text-align: left;
+}
+th {font-family: 'Rubik', sans-serif;}
+#stocks tr {height: 4.5rem;}
+#sum tr {height: 3rem;}
+
+button#userSelect {
+    position: relative;
+    background-color: #242424;
+    border: none;
+    color: #FFF;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    height: 3rem;
+    width: 15rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1rem 0 1rem 45rem;
+    padding: 0 2rem 0 0;
+  }
+button p, .userOption p {
+    text-align: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+button p:after {
+    content: "^";
+    position: absolute;
+    font-weight: bold;
+    color: #FFCB44;
+    padding: 0 1rem 0.3rem 0;
+    line-height: 0;
+    font-size: 1.8rem;
+    transform: scale(2,1) rotate(180deg);
+}
+button#userSelect:hover {
+    background-color: #303030;
+    color: #888;
+}
+img.cryptologo {
+    height: 1rem;
+}
+#dropdown {
+    position: absolute;
+    margin: -0.9rem 0 0rem 45rem;
+    background-color: #DDD;
+    color: #242424;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    width: 15rem;
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+#dropdown td {
+    height: 3rem;
+}
+#dropdown button {
+    background-color: #DDD;
+    border: none;
+    text-align: left;
+    text-indent: 2.3rem;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+#dropdown button:hover {
+    background-color: #303030;
+    color: #DDD;
+}
+.redtext {
+    animation: glowred 1.5s normal forwards ease-in-out;
+}
+.greentext {
+    animation: glowgreen 1.5s normal forwards ease-in-out;
+}
+
+@keyframes glowred {
+    0% {
+        color: #FFF;
+    }
+    25% {
+        color: #DF2828;
+    }
+    75% {
+        color: #DF2828;
+    }
+    100% {
+        color: #FFF;
+    }
+}
+
+@keyframes glowred {
+    0% {
+        color: #FFF;
+    }
+    25% {
+        color: #4CAA3C;
+    }
+    75% {
+        color: #4CAA3C;
+    }
+    100% {
+        color: #FFF;
+    }
+}
